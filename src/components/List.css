@@ -1,0 +1,64 @@
+.list{
+    display: flex;
+    margin: 15px;
+    background: white;
+    background: white;
+    background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+    line-height:50px;
+    align-items: center;
+    border-radius: 50px;
+    overflow-y: scroll;
+    position: relative;
+}
+
+.list::-webkit-scrollbar{
+    display: none;
+}
+
+.list .dt{
+    margin:0 5px 0 10px ;
+    color:#fa709a ;
+    cursor: pointer;
+}
+
+.list .dt:hover{
+  transform: scale(1.5,1.5);
+}
+
+.list .ls{
+    list-style-type: none;
+    font-size: 18px;
+}
+
+.edit{
+    position: absolute;
+    right:20px;
+    cursor: pointer;
+    color:rgba(247, 243, 243, 0.9)
+}
+
+.edit:hover{
+    transform: scale(1.5,1.5);
+}
+
+.complete{
+    position: absolute;
+    right:60px;
+    cursor: pointer;
+    color:rgba(247, 243, 243, 0.9)
+}
+
+.complete:hover{
+    transform: scale(1.5,1.5);
+}
+
+.tick{
+    text-decoration-style: 3px solid;
+    text-decoration-line:line-through ;
+    text-decoration-color:#f5576c;
+    color:#FFF;
+    text-decoration-thickness: 10%; 
+    opacity: 0.55;
+    transform: rotate(360deg);
+    transition:all 0.5s ease-in ;
+}
